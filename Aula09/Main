@@ -1,0 +1,14 @@
+package Aula09;
+
+public class Main {
+    static void main(String[] args) {
+        Livro livro = new Livro("Crepusculo",100,1,true);
+        Pessoa pessoa = new Pessoa("Heloisa",22,"feminino");
+        Ler ler = new Ler();
+
+        pessoa.descPessoa();
+        livro.detalhes();
+        livro.isAberto(true);
+        ler.lerLivro();
+    }
+}
