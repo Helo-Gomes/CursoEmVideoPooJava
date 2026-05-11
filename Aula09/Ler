@@ -1,0 +1,15 @@
+package Aula09;
+
+public class Ler {
+    private Pessoa leitor;
+    private Livro livroAtual;
+
+    public void lerLivro(){
+        //se o livroAtual estiver aberto
+        if(this.livroAtual.isAberto(true)){
+            System.out.println(leitor.getNome()+"está lendo o livroAtual: "+this.livroAtual.getNomeLivro());
+        }else{
+            System.out.println("Abra o livroAtual para ler.");
+        }
+    }
+}
